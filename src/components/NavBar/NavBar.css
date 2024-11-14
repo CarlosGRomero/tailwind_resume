@@ -1,0 +1,8 @@
+.logo-size {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    width: 3.5rem;
+    border-radius: 50%; /* This makes the image rounded */ 
+    object-fit: cover; /* Ensures the image covers the circle */
+  }
+  
