@@ -10,17 +10,17 @@ import Contact from './components/Contact'
 
 export default function App() {
   return (
-    <div className = "overflow-x-hidden text-neutral-50 antialiased selection:bg-cyan-300 selection:text-black">
-      <div className=' fixed top-0 -z-10 h-full w-full'>
+    <div className="overflow-x-hidden text-neutral-50 antialiased selection:bg-cyan-300 selection:text-black">
+      <div className='fixed top-0 -z-10 h-full w-full'>
         <Background />
       </div>
-      <div className=' container mx-auto px-8'>
+      <div className='pt-24 container mx-auto px-8'>
         <NavBar />
-        <Hero />
-        <About />
-        <Technologies />
-        <Experience />
-        <Contact />
+        <div id="hero"><Hero /></div>
+        <div id="about"><About /></div>
+        <div id="technologies"><Technologies /></div>
+        <div id="experience"><Experience /></div>
+        <div id="contact"><Contact /></div>
       </div>
     </div>
   )

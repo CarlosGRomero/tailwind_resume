@@ -84,7 +84,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "7107 Travertine Spring Dr, Austin, TX 78744 ",
+  address: " Austin, Texas ",
   phoneNo: "(832)-489-1007",
   email: "carlos@romerolabs.com",
 };

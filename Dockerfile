@@ -1,5 +1,5 @@
-# Stage 1: Build the React app
-FROM node:14-alpine AS build
+# Stage 1: Build the Vite app
+FROM node:16-alpine AS build
 
 # Set working directory
 WORKDIR /app
@@ -14,7 +14,10 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Stage 2: Serve the React app with Nginx
+# List the contents of /app for debugging
+RUN echo "=== Debug: Contents of /app after build ===" && ls -al /app && ls -al /app/dist
+
+# Stage 2: Serve the Vite app with Nginx
 FROM nginx:stable-alpine AS production
 
 # Copy the build output to Nginx static directory
